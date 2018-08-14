@@ -5,5 +5,6 @@ RUN pip install pandas
 
 ADD start.sh /app/
 RUN chmod +x /app/start.sh
+RUN mkdir /usr/local/notebook
 
-CMD ["bash", "/app/start.sh"]
+CMD sh /app/start.sh
